@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="nav">
+      <button type="button" id="signInBtn" class="disable">Login </button>
+      <button type="button" id="signUpBtn" class="disable">Register</button>
+    </div>
+    <div class="login-container" >
+      <h2 id="title">Login to Your Account</h2>
+      <form id="login-form">
+        <div class="input-field" id="nameField">
+          <i class="fa-solid fa-envelope"></i>
+        <input type="email" name="email" placeholder="Enter Your Email" />
+        <br />
+        <br />
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" name="password" value=""  placeholder="Enter Password" />
+        <br />
+        <br />
+        </div>
+        <button type="submit" class="submit">Login</button>   
+      </form>
+    </div>
+
+    <div class="register-container">
+      <h2>Register Your Account</h2>
+      <form id="register-form">
+        <div class="form1">
+          <i class="fa-solid fa-envelope"></i>
+        <input type="email" name="email"  placeholder="Enter Your Email" />
+        <br />
+        <br />
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" name="password" value="" placeholder="Enter Password"/>
+        <br />
+        <br />
+        <button type="submit" class="submit">Sign Up</button>
+      </div>
+      </form>
+    </div>
+    <div class="dashboard">
+      <input type="number" min="1" id="amount" />
+      <br />
+      <br />
+      <button id="wit">Withdraw</button>
+      <button id="dep">Deposit</button>
+    </div>
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>

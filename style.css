@@ -1,0 +1,130 @@
+*{
+   padding: 0;
+   margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+ 
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(193 96 12), #0095ff);
+    background-position: center;
+    background-size: cover;
+}
+.login-container{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white ;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.login-container h2{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: chocolate;
+    position: relative;
+}
+.login-container h2::after{
+    content: " ";
+    width: 250px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: chocolate;
+    position: absolute;
+    bottom: -12px;
+    left: 160px;
+    transform: translateX(-50%);
+}
+.input-field{
+    background-color: white;
+    color: #000000;
+    margin: 15px 0;
+    border-radius: 3px;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+}
+.input{
+    width: 100%;
+    background-color: transparent;
+    border: o;
+    outline: o;
+    padding: 18px 15px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    margin: 0;
+    position: absolute;
+    top: 31.5%;
+    left: 700px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+.nav button{
+    background-color: #1c6faa;
+    height: 35px;
+    border-radius: 10px;
+    border: o;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color 1s; 
+    width: 60px;
+}
+
+.nav button.disable{
+    background-color: #2367a7c7;
+    color: #0501015b;
+}
+.register-container{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white ;
+    padding: 50px 60px 70px;
+    text-align: center;
+
+}
+.register-container h2{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: chocolate;
+    position: relative;
+}
+.register-container h2::after{
+    content: " ";
+    width: 250px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: chocolate;
+    position: absolute;
+    bottom: -12px;
+    left: 160px;
+    transform: translateX(-50%);
+
+}
+.submit{
+    flex-basis: 48%;
+    background-color: #2276b3;
+    height: 35px;
+    border-radius: 20px;
+    border: o;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color 1s; 
+    width: 70px;
+}
